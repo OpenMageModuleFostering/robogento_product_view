@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Robogento_Admin>
+            <active>true</active>
+            <codePool>community</codePool>
+        </Robogento_Admin>
+    </modules>
+</config>

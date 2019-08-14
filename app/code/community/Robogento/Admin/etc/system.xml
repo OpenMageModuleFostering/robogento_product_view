@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!--
+ * Robogento
+ *
+ * NOTICE OF LICENSE
+ *
+ * Unauthorized copying of this file, via any medium is strictly prohibited
+ *
+ * @category    Robogento
+ * @package     Robogento_Admin
+ * @copyright   Copyright (c) 2014 Robogento (http://robogento.com)
+ *
+ -->
+<config>
+    <tabs>
+        <robogento translate="label" module="roboadmin">
+            <label>Robogento</label>
+            <sort_order>100</sort_order>
+        </robogento>
+    </tabs>
+    <sections>
+        <roboadmin translate="label" module="roboadmin">
+            <label>Modules &amp; Store</label>
+            <tab>robogento</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>50</sort_order>
+            <show_in_default>0</show_in_default>
+            <show_in_website>0</show_in_website>
+            <show_in_store>0</show_in_store>
+            <groups>
+                <robogentobanner>
+                    <!--<frontend_model>roboadmin/adminhtml_system_config_fieldset_banner</frontend_model> disabled because mage 1.5 dies over it -->
+                    <sort_order>0</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                </robogentobanner>
+                <robogentomodules>
+                    <!--<frontend_model>roboadmin/adminhtml_system_config_fieldset_modules</frontend_model> disabled because mage 1.5 dies over it -->
+                    <sort_order>1</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                </robogentomodules>
+            </groups>
+        </roboadmin>
+    </sections>
+</config>

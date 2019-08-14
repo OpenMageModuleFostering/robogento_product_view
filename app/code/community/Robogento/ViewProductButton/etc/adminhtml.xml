@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<!--
+* Robogento
+*
+* NOTICE OF LICENSE
+*
+* Unauthorized copying of this file, via any medium is strictly prohibited
+*
+* @category    Robogento
+* @package     Robogento_ViewProductButton
+* @copyright   Copyright (c) 2014 Robogento (http://robogento.com)
+*
+-->
+<config>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <roboviewproduct>
+                                        <title>Robogento Product View Button</title>
+                                    </roboviewproduct>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+    <translate>
+        <modules>
+            <Robogento_ViewProductButton>
+                <files>
+                    <default>Robogento_ViewProductButton.csv</default>
+                </files>
+            </Robogento_ViewProductButton>
+        </modules>
+    </translate>
+</config>

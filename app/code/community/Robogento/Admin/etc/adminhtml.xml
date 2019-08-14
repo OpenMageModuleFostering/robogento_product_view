@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<!--
+* Robogento
+*
+* NOTICE OF LICENSE
+*
+* Unauthorized copying of this file, via any medium is strictly prohibited
+*
+* @category    Robogento
+* @package     Robogento_Admin
+* @copyright   Copyright (c) 2014 Robogento (http://robogento.com)
+*
+-->
+<config>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <roboadmin>
+                                        <title>Robogento Admin Module</title>
+                                    </roboadmin>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+    <translate>
+        <modules>
+            <Robogento_Admin>
+                <files>
+                    <default>Robogento_Admin.csv</default>
+                </files>
+            </Robogento_Admin>
+        </modules>
+    </translate>
+</config>

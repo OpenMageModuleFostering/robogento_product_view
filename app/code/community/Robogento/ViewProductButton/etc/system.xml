@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<!--
+ * Robogento
+ *
+ * NOTICE OF LICENSE
+ *
+ * Unauthorized copying of this file, via any medium is strictly prohibited
+ *
+ * @category    Robogento
+ * @package     Robogento_Admin
+ * @copyright   Copyright (c) 2014 Robogento (http://robogento.com)
+ *
+ -->
+<config>
+    <sections>
+        <roboviewproduct translate="label" module="roboviewproduct">
+            <label>Product View Button</label>
+            <tab>robogento</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>5</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <robogentobanner>
+                    <sort_order>0</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                </robogentobanner>
+                <general translate="label" module="roboviewproduct">
+                    <label>General</label>
+                    <sort_order>5</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <enabled translate="label comment">
+                            <label>Enabled</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </enabled>
+                        <query translate="label comment">
+                            <label>Query elements</label>
+                            <comment>Query elements are added behind the URL</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>You can use %random% and %time% to get a random hash or unix timestamp</comment>
+                        </query>
+                    </fields>
+                </general>
+            </groups>
+        </roboviewproduct>
+    </sections>
+</config>

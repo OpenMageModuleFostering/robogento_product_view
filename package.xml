@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>Robogento_Product_View</name>
+    <version>1.0.1</version>
+    <stability>stable</stability>
+    <license uri="http://www.robogento.com">IP (c) Robogento</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>The View Productmodule adds a handy "View product" button to the product edit screen in the Magento admin.</summary>
+    <description>If you're like many store owners, you add and edit your products directly through the Magento admin. Every time you want to preview your newly added or edited product, you have to find its URL key and copy-paste it behind your store's domain. Having a button which takes you directly to the product in the front-end of your store would be much easier. This is exactly what the Product View module does. It adds a "View product" button in the top right near where the other product buttons in the Magento admin are located. The button is only clickable when the product is set to be available and viewable in the front-end. The View Product module also allows you to bypass certain kinds of Full Page Caches like Lesti FPC through its configuration section. </description>
+    <notes>Minor bugfix for some store owners' hosting setup</notes>
+    <authors><author><name>Robogento Team</name><user>Robogento</user><email>support@robogento.com</email></author></authors>
+    <date>2014-08-22</date>
+    <time>10:00:44</time>
+    <contents><target name="magecommunity"><dir name="Robogento"><dir name="ViewProductButton"><dir name="Block"><dir name="Product"><file name="Edit.php" hash="fa64a1d34d1344425cc42036b4ce5a72"/></dir></dir><dir name="Helper"><file name="Data.php" hash="441a9bfad605d84d14a0ddb009b6d267"/></dir><dir name="etc"><file name="adminhtml.xml" hash="92d50803d589d54c558ca79eee5f15a4"/><file name="config.xml" hash="90a0e8f550976370f63e7bb8fb47133c"/><file name="system.xml" hash="3d1dda95132b8076e18a9cbee7f26dd9"/></dir></dir><dir name="Admin"><dir name="Block"><dir name="Adminhtml"><file name="Popup.php" hash="283ca146ccc048e07c8d8fdb00c2718f"/><dir name="System"><dir name="Config"><dir name="Fieldset"><file name="Banner.php" hash="917ea38f1aaa115d2a9c517639cf5c3f"/><file name="Modules.php" hash="431518159af8740ff172d45f5aed38bf"/></dir><dir name="Form"><file name="Fieldset.php" hash="12bb0018a7a78796854be135c540dc5d"/></dir></dir></dir></dir></dir><dir name="Helper"><file name="Data.php" hash="1dc3c094f9497a40d41a005283fb1fd0"/><file name="Remote.php" hash="68dee3de8cfccebc9aec9b4f1e43025a"/></dir><dir name="Model"><file name="Feed.php" hash="8a6be7ea892489aefd50fbfe9df003cf"/><file name="Observer.php" hash="21ecd0e15590f2d89f4a324754103d69"/></dir><dir name="controllers"><file name="PopupController.php" hash="4a1245f34efeccfe8c36ca7246508a90"/></dir><dir name="etc"><file name="adminhtml.xml" hash="f5efda167dd7cc6e293703f1feff8a53"/><file name="config.xml" hash="574321128828f1dec7132640af2169e4"/><file name="system.xml" hash="8cb49e17e6494ad7f2515608002ebdcc"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Robogento_Admin.xml" hash="6c67fbe378217c5e33a69156dccc740c"/><file name="Robogento_ViewProductButton.xml" hash="8be478f7ddb678e20426aea1b71e9680"/></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.1.0</min><max>5.6.0</max></php></required></dependencies>
+</package>

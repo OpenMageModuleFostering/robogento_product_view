@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<!--
+* Robogento
+*
+* NOTICE OF LICENSE
+*
+* Unauthorized copying of this file, via any medium is strictly prohibited
+*
+* @category    Robogento
+* @package     Robogento_Admin
+* @copyright   Copyright (c) 2014 Robogento (http://robogento.com)
+*
+-->
+<config>
+    <modules>
+        <Robogento_Admin>
+            <version>1.0.0</version>
+        </Robogento_Admin>
+    </modules>
+    <global>
+        <models>
+            <roboadmin>
+                <class>Robogento_Admin_Model</class>
+            </roboadmin>
+        </models>
+        <helpers>
+            <roboadmin>
+                <class>Robogento_Admin_Helper</class>
+            </roboadmin>
+        </helpers>
+        <blocks>
+            <roboadmin>
+                <class>Robogento_Admin_Block</class>
+            </roboadmin>
+            <adminhtml>
+                <rewrite>
+                    <system_config_form_fieldset>Robogento_Admin_Block_Adminhtml_System_Config_Form_Fieldset</system_config_form_fieldset>
+                </rewrite>
+            </adminhtml>
+        </blocks>
+    </global>
+    <admin>
+        <routers>
+            <roboadmin>
+                <use>admin</use>
+                <args>
+                    <module>Robogento_Admin</module>
+                    <frontName>roboadmin</frontName>
+                </args>
+            </roboadmin>
+        </routers>
+    </admin>
+    <adminhtml>
+        <events>
+            <controller_action_predispatch>
+                <observers>
+                    <roboadmin_notification>
+                        <class>roboadmin/feed</class>
+                        <method>checkUpdate</method>
+                    </roboadmin_notification>
+                </observers>
+            </controller_action_predispatch>
+            <controller_action_postdispatch>
+            <!--<admin_session_user_login_success>-->
+                <observers>
+                    <roboadmin_emailpopup>
+                        <class>roboadmin/observer</class>
+                        <method>popup</method>
+                    </roboadmin_emailpopup>
+                </observers>
+            <!--</admin_session_user_login_success>-->
+            </controller_action_postdispatch>
+
+        </events>
+    </adminhtml>
+    <default>
+        <roboadmin>
+            <popup>
+                <registered>0</registered>
+            </popup>
+            <urls>
+                <notifications>https://robogento.com/robomanager/notification/rss/</notifications>
+                <register>https://robogento.com/robomanager/register/push/</register>
+                <store>https://robogento.com/robomanager/store/get/</store>
+                <log>https://robogento.com/robomanager/log/img/</log>
+            </urls>
+        </roboadmin>
+    </default>
+</config>
