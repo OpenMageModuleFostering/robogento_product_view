@@ -1,16 +1,5 @@
 {
-    "name": "OpenMageModuleFostering/Robogento_Product_View",
-    "type": "magento-module",
-    "license": "IP-(c)-Robogento",
-    "homepage": "",
-    "description": "The View Productmodule adds a handy "View product" button to the product edit screen in the Magento admin.",
-    "authors": [
-    {
-        "name": "Robogento Team",
-        "email": "support@robogento.com"
-    }
-],
-    "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+    "keywords": [
+        "openmage-module"
+    ]
 }
